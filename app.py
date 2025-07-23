@@ -73,7 +73,7 @@ if uploaded_file:
     st.plotly_chart(px.pie(names=seg_counts.index,values=seg_counts.values,title="Customer Segments",
                            color_discrete_sequence=px.colors.qualitative.Set3),use_container_width=True)
     st.markdown("---")
-    st.markdown("<center>✨ Built with ❤️ using Streamlit | By Rishi & ChatGPT</center>", unsafe_allow_html=True)
+
 
 else:
     st.info("👈 Please upload the '.xsl' file from the sidebar to begin.")
