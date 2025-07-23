@@ -14,7 +14,7 @@ st.markdown(
 )
 st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3135/3135768.png",width=120)
 st.sidebar.title("📁 Upload Data")
-uploaded_file = st.sidebar.file_uploader("Upload `online_retail_II.xlsx`",type=["xlsx"])-------------
+uploaded_file = st.sidebar.file_uploader("Upload `online_retail_II.xlsx`",type=["xlsx"])
 if uploaded_file:
     data = pd.read_excel(uploaded_file,sheet_name="Year 2010-2011")
     df=data.dropna(subset=["Customer ID"])
